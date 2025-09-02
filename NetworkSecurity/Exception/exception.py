@@ -1,22 +1,22 @@
-import sys
+import sys  # Imports the sys module, used for accessing system-specific parameters and functions
 
-from NetworkSecurity.Logging import logger
-class NetworkSecurityException(Exception):
-    def __init__(self, error_message,error_details:sys):
-        self.error_message = error_message
-        __,__,exc_tb = error_details.exc_info()
+from NetworkSecurity.Logging import logger  # Imports the logger object from the project's Logging module
 
-        self.lineno=exc_tb.tb_lineno
+class NetworkSecurityException(Exception):  # Defines a custom exception class inheriting from Python's Exception
+    def __init__(self, error_message, error_details:sys):  # Constructor takes an error message and error details (sys)
+        self.error_message = error_message  # Stores the error message in the instance
+        __,__,exc_tb = error_details.exc_info()  # Retrieves the traceback object from the current exception info
 
-    def __str__(self) -> str:
+        self.lineno = exc_tb.tb_lineno  # Stores the line number where the exception occurred
+
+    def __str__(self) -> str:  # Defines how the exception is represented as a string
         return f"Error Occored in Python Script name [{0}] Line Number [{1}] error message [{2}]".format
-        (self.file_name, self.lineno, str(self.error_message))
+        (self.file_name, self.lineno, str(self.error_message))  # Formats the error details for display (has a bug: self.file_name is not defined)
 
-
-if __name__=='__main__':
-    try:
-        logger.logging.info("Enter the try block")
-        a=1/0
-        print("This will not be printed",a)
-    except Exception as e:
-           raise NetworkSecurityException(e,sys)
+if __name__=='__main__':  # Checks if this script is being run directly
+    try:  # Starts a try block to catch exceptions
+        logger.logging.info("Enter the try block")  # Logs an info message indicating entry into the try block
+        a=1/0  # Deliberately causes a ZeroDivisionError
+        print("This will not be printed",a)  # This line will not execute due to the exception above
+    except Exception as e:  # Catches any exception that occurs in the try block
+           raise NetworkSecurityException(e,sys)  # Raises the custom exception with the error and
