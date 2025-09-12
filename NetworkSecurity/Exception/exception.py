@@ -8,10 +8,10 @@ class NetworkSecurityException(Exception):  # Defines a custom exception class i
         __,__,exc_tb = error_details.exc_info()  # Retrieves the traceback object from the current exception info
 
         self.lineno = exc_tb.tb_lineno  # Stores the line number where the exception occurred
+        self.file_name = exc_tb.tb_frame.f_code.co_filename  # Gets the filename where the exception occurred
 
     def __str__(self) -> str:  # Defines how the exception is represented as a string
-        return f"Error Occored in Python Script name [{0}] Line Number [{1}] error message [{2}]".format
-        (self.file_name, self.lineno, str(self.error_message))  # Formats the error details for display (has a bug: self.file_name is not defined)
+        return f"Error Occurred in Python Script name [{self.file_name}] Line Number [{self.lineno}] error message [{str(self.error_message)}]"  # Formats the error details for display
 
 if __name__=='__main__':  # Checks if this script is being run directly
     try:  # Starts a try block to catch exceptions
