@@ -58,7 +58,7 @@ class NetworkDataExtract():
 
 # Main execution block
 if __name__=='__main__':
-    FILE_PATH = "Network_data\phisingData.csv"  # Path to input CSV file
+    FILE_PATH = "/home/nsl/Documents/Network-Security-Project/Network_data/phisingData.csv"  # Path to input CSV file
     DATABASE = "PhisingData"  # MongoDB database name
     Collection = "NetworkData"  # MongoDB collection name
     
