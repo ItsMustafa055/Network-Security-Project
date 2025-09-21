@@ -1,0 +1,7 @@
+[ 2025-09-19 00:12:18,554 ] 27 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
+[ 2025-09-19 00:12:18,555 ] 12 root - INFO - Data ingestion started
+[ 2025-09-19 00:12:18,555 ] 40 root - INFO - Connecting to MongoDB - Database: NetworkSecurity, Collection: NetworkData
+[ 2025-09-19 00:12:20,994 ] 46 root - INFO - Number of documents in collection: 0
+[ 2025-09-19 00:12:20,994 ] 49 root - WARNING - No data found in collection NetworkData in database NetworkSecurity
+[ 2025-09-19 00:12:21,162 ] 53 root - INFO - Available collections in database NetworkSecurity: []
+[ 2025-09-19 00:12:21,162 ] 16 root - ERROR - Error occurred during data ingestion
