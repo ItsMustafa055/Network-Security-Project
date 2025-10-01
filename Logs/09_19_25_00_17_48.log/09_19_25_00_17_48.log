@@ -1,6 +1,0 @@
-[ 2025-09-19 00:17:50,724 ] 27 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1
-[ 2025-09-19 00:17:50,724 ] 12 root - INFO - Data ingestion started
-[ 2025-09-19 00:17:56,986 ] 72 root - INFO - Performed Train Test split on the Dataframe
-[ 2025-09-19 00:17:56,986 ] 73 root - INFO - Exited split_train_test_from_data method of data_ingestion class
-[ 2025-09-19 00:17:56,986 ] 77 root - INFO - Exporting train and test file Path.
-[ 2025-09-19 00:17:57,080 ] 85 root - INFO - Exported train and test file path
