@@ -2,6 +2,7 @@ import os
 import sys
 import numpy as np
 import pandas as pd
+import Data_Schema
 
 """
 defining common constants variable for training pipeline
@@ -15,7 +16,7 @@ FILE_NAME = "phisingData.csv"
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
 
-SCHEMA_FILEPATH = os.path.join("data_schema", "schema.yaml")
+SCHEMA_FILE_PATH = os.path.join("Data_Schema", "schema.yaml")
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
