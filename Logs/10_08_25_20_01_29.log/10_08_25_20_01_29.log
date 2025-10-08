@@ -1,0 +1,15 @@
+[ 2025-10-08 20:02:06,149 ] 15 root - INFO - Data ingestion started
+[ 2025-10-08 20:02:17,137 ] 72 root - INFO - Performed Train Test split on the Dataframe
+[ 2025-10-08 20:02:17,138 ] 73 root - INFO - Exited split_train_test_from_data method of data_ingestion class
+[ 2025-10-08 20:02:17,139 ] 77 root - INFO - Exporting train and test file Path.
+[ 2025-10-08 20:02:17,598 ] 85 root - INFO - Exported train and test file path
+[ 2025-10-08 20:02:17,600 ] 17 root - INFO - Data Ingestion Completed
+[ 2025-10-08 20:02:17,676 ] 24 root - INFO - Initiate the Data Validation
+[ 2025-10-08 20:02:18,051 ] 41 root - INFO - Required number of columns:31
+[ 2025-10-08 20:02:18,052 ] 42 root - INFO - Data frame has columns:31
+[ 2025-10-08 20:02:18,053 ] 41 root - INFO - Required number of columns:31
+[ 2025-10-08 20:02:18,054 ] 42 root - INFO - Data frame has columns:31
+[ 2025-10-08 20:02:18,928 ] 64 root - INFO - All required numerical columns are present
+[ 2025-10-08 20:02:18,929 ] 64 root - INFO - All required numerical columns are present
+[ 2025-10-08 20:02:18,930 ] 26 root - INFO - Data Validation Completed
+[ 2025-10-08 20:02:18,931 ] 38 root - ERROR - Error occurred during data ingestion
